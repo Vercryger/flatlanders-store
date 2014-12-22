@@ -1,0 +1,56 @@
+@import 'bootstrap'
+
+a, 
+a:hover, 
+a:active, 
+a:focus,
+button
+  outline: 0 !important
+  text-decoration: none
+
+img
+  &.img-thumbnail
+    margin-bottom: 10px
+
+form[name="reviewForm"]
+  width: 50%
+
+.right-centered
+  float: right
+  width: 250px
+  position: absolute
+  top: 50px
+  right: 0
+
+.nav-pills > li > a
+  color: #7266BA
+  
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus
+  background-color: #564AA3 
+
+.nav-pills > li.active > a:hover
+  background-color: #7266BA
+
+.signature
+  color: #00A86B
+
+.centered
+  text-align: center
+
+.submit,
+.submit:focus
+  background-color: #CA316D
+  color: #FFF
+
+  &:hover
+    background-color: #FFF
+    color: #CA316D
+
+// ng- classes
+
+.ng-invalid.ng-dirty
+  border-color: #FA787E
+
+.ng-valid.ng-dirty
+  border-color: #78FA89

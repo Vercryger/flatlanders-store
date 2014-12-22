@@ -1,0 +1,9 @@
+section(ng-show="product.images.length" style="margin-bottom: 10px;")
+  img.img-thumbnail(ng-src="{{ product.images[thumb.current] }}")
+  .media
+    a.media-left(href="" ng-click="thumb.setCurrent(0)")
+      img.img-thumbnail(ng-src="{{ product.images[0] }}" width="56px")
+    a.media-left(href="" ng-click="thumb.setCurrent(1)")
+      img.img-thumbnail(ng-src="{{ product.images[1] }}" width="56px")
+    a.media-left(href="" ng-click="thumb.setCurrent(2)")
+      img.img-thumbnail(ng-src="{{ product.images[2] }}" width="56px")

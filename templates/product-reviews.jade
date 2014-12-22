@@ -1,0 +1,31 @@
+h4 Reviews
+.review(ng-repeat="review in product.reviews")
+  .media
+    a.media-left
+      img.img-thumbnail(ng-src="{{ review.thumb }}" width="48px")
+    .media-body
+      h4.media-heading {{ review.stars }} Stars 
+      |{{ review.body }}  
+      strong.signature  By 
+      cite {{ review.author }} on {{ review.createdOn | date}}
+  
+h3 Submit a Review 
+
+form(name="reviewForm" role="form" ng-controller="ReviewController as rCtrl" ng-submit="reviewForm.$valid && rCtrl.addReview(product)" novalidate)
+  .media
+    a.media-left
+      img.img-thumbnail(src="images/thumbnails/anon.jpg" width="48px")
+    .media-body
+      h4.media-heading {{ rCtrl.review.stars }} Stars 
+      |{{ rCtrl.review.body }}  
+      strong.signature  By 
+      cite {{ rCtrl.review.author }}
+    fieldset.form-group
+      select.form-control(ng-model="rCtrl.review.stars" ng-options="stars for stars in [5,4,3,2,1]" required)
+        option(value="") Rate the product
+                   
+    fieldset.form-group
+      textarea.form-control(ng-model="rCtrl.review.body" placeholder="Write a short review of the product.." required)
+    fieldset.form-group
+      input.form-control(ng-model="rCtrl.review.author" type="email" placeholder="example@email.com" required)
+    button.btn.btn-default.submit(type="submit") Submit
