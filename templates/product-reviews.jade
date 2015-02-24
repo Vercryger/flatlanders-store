@@ -20,10 +20,10 @@ form(name="reviewForm" role="form" ng-controller="ReviewController as rCtrl" ng-
       |{{ rCtrl.review.body }}  
       strong.signature  By 
       cite {{ rCtrl.review.author }}
+    
     fieldset.form-group
       select.form-control(ng-model="rCtrl.review.stars" ng-options="stars for stars in [5,4,3,2,1]" required)
-        option(value="") Rate the product
-                   
+        option(value="") Rate the product               
     fieldset.form-group
       textarea.form-control(ng-model="rCtrl.review.body" placeholder="Write a short review of the product.." required)
     fieldset.form-group
