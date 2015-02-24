@@ -29,6 +29,7 @@ Enjoy!
 
 ## Autor ##
 *[Vercryger](http://www.github.com/vercryger)*
+And [my twitter](https://twitter.com/vercryger) so you can write a Hello! :D
 
 ## Design ##
 ![The Design](https://raw.githubusercontent.com/Vercryger/flatlanders-store/master/preview.png)
