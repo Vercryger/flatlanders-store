@@ -36,8 +36,6 @@ And [my twitter](https://twitter.com/vercryger) so you can write a Hello! :D
 
 # License #
 
-
-
 The MIT License (MIT)
 
 Copyright (c)
