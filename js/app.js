@@ -1,14 +1,6 @@
 (function() {
   var app = angular.module('gemStore', ['store-products']);
   
-  // App's Controllers
-  //app.controller('StoreController', ['$http', function($http) {
-  //  var store = this;
-  //  store.products = [ ];
-  //  $http.get('http://testinghello.freeiz.com/products.json').success(function(data) {
-  //    store.products = data;
-  //  });
-  //}]);
   app.controller('StoreController', function() {
     this.products = gems;
   });
