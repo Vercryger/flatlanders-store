@@ -31,7 +31,7 @@ Enjoy!
 *[Vercryger](http://www.github.com/vercryger)*
 
 ## Design ##
-![The Design]()
+![The Design](https://raw.githubusercontent.com/Vercryger/flatlanders-store/master/preview.png)
 
 [Angular.js]: https://angularjs.org/
 [Bootstrap]: http://getbootstrap.com/
